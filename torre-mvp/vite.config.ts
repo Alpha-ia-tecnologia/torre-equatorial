@@ -49,7 +49,7 @@ export default defineConfig(async () => {
       : undefined,
     // Production container (Easypanel) serves the build via `vite preview`
     // behind a proxy on a custom domain.
-    preview: { allowedHosts: true },
+    preview: { allowedHosts: true as const },
     plugins: [
       vinext(),
       sites(),
