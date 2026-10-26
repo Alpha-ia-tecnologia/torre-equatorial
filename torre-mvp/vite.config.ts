@@ -47,6 +47,9 @@ export default defineConfig(async () => {
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,
+    // Production container (Easypanel) serves the build via `vite preview`
+    // behind a proxy on a custom domain.
+    preview: { allowedHosts: true },
     plugins: [
       vinext(),
       sites(),

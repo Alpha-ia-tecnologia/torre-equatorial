@@ -1,0 +1,8 @@
+*
+!torre-mvp/
+torre-mvp/node_modules
+torre-mvp/dist
+torre-mvp/.wrangler
+torre-mvp/.vinext
+torre-mvp/.git-mvp-backup
+torre-mvp/*.log
